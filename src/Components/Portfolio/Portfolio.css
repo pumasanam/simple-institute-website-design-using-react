@@ -1,0 +1,77 @@
+.portfolio{
+    width: 100%;
+    padding: 6rem 5rem;
+    height: 90vh;
+    background-image: url(./../img/portfolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #ecf0f1;
+    
+}
+
+.portfolio::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #487eb0;
+    opacity: 0.9;
+    z-index: -1;
+    
+}
+
+ .portfolio .carouse_item .carousel_img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #dcdde1;
+}
+
+.portfolio_list h3{
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.portfolio_list p{
+    font-size: 1.2rem;
+} 
+
+@media screen and (max-width:810px){
+    .portfolio{
+        padding: 6rem 2rem!important;
+    }
+}
+
+
+@media screen and (max-width:496px){
+    
+
+     .portfolio{
+        padding: 4rem 2rem!important;
+    }
+
+    .portfolio .carouse_item .carousel_img{
+        width: 320px;
+        height: 320px;
+       
+    }
+    
+   
+}
+
+
+
+
+

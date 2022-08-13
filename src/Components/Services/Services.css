@@ -1,0 +1,100 @@
+.service{
+    width: 100%;
+    padding: 6rem 5rem 4rem 5rem;
+    background-color: #ecf0f1;
+}
+
+.service .service_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service .service_list .service_img, .service .service_list .service_item{
+    width: 48%;
+}
+
+.service .service_list .service_img img{
+    width: 100%;
+    border-radius: 8px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.service .service_list .service_item h2{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #10ac84;
+}
+
+.service .service_list .service_item .inner_service .inner_service_list{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 0.7rem;
+    transition: 0.3s ease;
+} 
+
+.service .service_list .service_item .inner_service .inner_service_list:hover{
+    background-color: #10ac84;
+    color: white;
+}
+
+.service .service_list .service_item .inner_service .inner_service_list .fa{
+    color:#2c3e50;
+    font-size: 2.3rem;
+    margin-right: 15px;
+}
+
+.service .service_list .service_item .inner_service .inner_service_list .inner_service_item h4{
+    font-size: 1.2rem;
+   
+}
+
+@media screen and (max-width:810px){
+    .service{
+        padding: 6rem 2rem 4rem 2rem!important;
+    }
+
+    .service .service_list .service_img img{
+        height: 285px!important;
+    }
+
+    .service .service_list .service_item {
+        width: 45%!important;
+    }
+
+    .service .service_list .service_img{
+        width: 53%!important;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .service .service_list {
+        flex-direction: column!important;
+    }
+
+    .service .service_list .service_img img{
+        height: auto!important;
+    }
+
+    .service .service_list .service_img, .service .service_list .service_item{
+        width: 100%!important;
+    }
+
+    .service .service_list .service_img{
+        margin-bottom: 20px!important;
+    }
+
+    .service .service_list .service_item .inner_service .inner_service_list{
+        width: 100%!important;
+    } 
+}
+
+@media screen and (max-width:496px){
+    .service{
+        padding: 4rem 1rem 2rem 1rem!important;
+    }
+}
